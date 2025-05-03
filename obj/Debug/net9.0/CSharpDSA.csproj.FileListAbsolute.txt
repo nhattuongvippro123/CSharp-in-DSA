@@ -12,3 +12,4 @@ C:\Users\ADMIN\Documents\GitHub\C# in DSA\CSharpDSA\obj\Debug\net9.0\refint\CSha
 C:\Users\ADMIN\Documents\GitHub\C# in DSA\CSharpDSA\obj\Debug\net9.0\CSharpDSA.pdb
 C:\Users\ADMIN\Documents\GitHub\C# in DSA\CSharpDSA\obj\Debug\net9.0\CSharpDSA.genruntimeconfig.cache
 C:\Users\ADMIN\Documents\GitHub\C# in DSA\CSharpDSA\obj\Debug\net9.0\ref\CSharpDSA.dll
+C:\Users\ADMIN\Documents\GitHub\C# in DSA\CSharpDSA\obj\Debug\net9.0\CSharpDSA.sourcelink.json
