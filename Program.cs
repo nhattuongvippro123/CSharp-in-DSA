@@ -32,7 +32,29 @@ namespace MainProgram
 
             Console.WriteLine($"Execution Time: {stopwatch.ElapsedMilliseconds} ms\n");
 
+            Console.WriteLine("Bài Toán TwoPoint:\n");
+            Console.WriteLine("Cho mang [1, 2, 3, 4, 6]\n");
+            Console.WriteLine("target = 9\n");
+            Console.WriteLine("output : [x,x]\n");
 
+            int[] numstp = [1, 2, 3, 4, 6];
+            int targettp = 9;
+
+            Stopwatch stopwatchtp = Stopwatch.StartNew();
+            int[] resulttp = TwoPointerSolver.Findbytwosumtp(numstp, targettp);
+            stopwatchtp.Stop();
+
+            if (resulttp.Length == 2)
+            {
+                Console.WriteLine($"Giai:\n");
+                Console.WriteLine($"Result: {resulttp[0]}, {resulttp[1]}\n");
+            }
+            else
+            {
+                Console.WriteLine("Invalid Solution");
+            }
+
+            Console.WriteLine($"Execution Time: {stopwatchtp.ElapsedMilliseconds} ms\n");
 
 
             Person person1 = new Person("Nam", 30);
