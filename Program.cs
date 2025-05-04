@@ -23,7 +23,6 @@ namespace MainProgram
             if (result.Length == 2)
             {
                 Console.WriteLine($"Giai:\n");
-                Console.WriteLine($"Giai:\n");
                 Console.WriteLine($"Result: {result[0]}, {result[1]}\n");
             }
             else
