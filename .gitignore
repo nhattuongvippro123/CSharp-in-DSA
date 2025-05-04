@@ -1,22 +1,11 @@
-# Ignore build results
 bin/
 obj/
 *.exe
 *.dll
 *.pdb
-
-# Ignore Visual Studio files
+*.cache
+*.log
 .vscode/
 *.user
 *.suo
-
-# Ignore NuGet packages
-*.nupkg
-project.lock.json
-project.assets.json
-*.nuget.props
-*.nuget.targets
-*.nuproj
-
-# Others
-*.log
+*.csproj.user
