@@ -56,6 +56,30 @@ namespace MainProgram
 
             Console.WriteLine($"Execution Time: {stopwatchtp.ElapsedMilliseconds} ms\n");
 
+            Console.WriteLine("Bài Toán TwoPoint:\n");
+            Console.WriteLine("Cho mang [1, 5, 7, 9, 11]\n");
+            Console.WriteLine("k = 8\n");
+            Console.WriteLine("output : [x,x]\n");
+
+            int[] numsttltk = [1, 5, 7, 9, 11];
+            int k = 8;
+
+            Stopwatch stopwatchttltk = Stopwatch.StartNew();
+            int[] resultttltk = TotalMaxLessThanK.FindTwoNumHasMaxLessThanK(numsttltk, k);
+            stopwatchttltk.Stop();
+
+            if (resultttltk.Length == 2)
+            {
+                Console.WriteLine($"Giai:\n");
+                Console.WriteLine($"Result: {resultttltk[0]}, {resultttltk[1]}\n");
+            }
+            else
+            {
+                Console.WriteLine("Invalid Solution");
+            }
+
+            Console.WriteLine($"Execution Time: {stopwatchttltk.ElapsedMilliseconds} ms\n");
+
 
             Person person1 = new Person("Nam", 30);
             person1.Introduce();
