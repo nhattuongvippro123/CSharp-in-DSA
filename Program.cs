@@ -9,11 +9,20 @@ namespace MainProgram
     {
         static void Main()
         {
+            //SolveTwoSum();
+            //SolveTwoPointer();
+            SolveTotalMaxLessThanK();
+            //TestPersonAndStudent();
+        }
+
+        static void SolveTwoSum()
+        {
             Console.WriteLine("Bài Toán Two sum:\n");
             Console.WriteLine("Cho mang [2, 7, 11, 15]\n");
             Console.WriteLine("taget = 9\n");
             Console.WriteLine("output : [x,x]\n");
-            int[] nums = [2, 7, 11, 15];
+
+            int[] nums = { 2, 7, 11, 15 };
             int target = 9;
 
             Stopwatch stopwatch = Stopwatch.StartNew();
@@ -31,13 +40,16 @@ namespace MainProgram
             }
 
             Console.WriteLine($"Execution Time: {stopwatch.ElapsedMilliseconds} ms\n");
+        }
 
+        static void SolveTwoPointer()
+        {
             Console.WriteLine("Bài Toán TwoPoint:\n");
             Console.WriteLine("Cho mang [1, 2, 3, 4, 6]\n");
             Console.WriteLine("target = 9\n");
             Console.WriteLine("output : [x,x]\n");
 
-            int[] numstp = [1, 2, 3, 4, 6];
+            int[] numstp = { 1, 2, 3, 4, 6 };
             int targettp = 9;
 
             Stopwatch stopwatchtp = Stopwatch.StartNew();
@@ -55,13 +67,16 @@ namespace MainProgram
             }
 
             Console.WriteLine($"Execution Time: {stopwatchtp.ElapsedMilliseconds} ms\n");
+        }
 
-            Console.WriteLine("Bài Toán TwoPoint:\n");
+        static void SolveTotalMaxLessThanK()
+        {
+            Console.WriteLine("Bài Toán TotalMaxLessThanK:\n");
             Console.WriteLine("Cho mang [1, 5, 7, 9, 11]\n");
             Console.WriteLine("k = 8\n");
             Console.WriteLine("output : [x,x]\n");
 
-            int[] numsttltk = [1, 5, 7, 9, 11];
+            int[] numsttltk = { 1, 5, 7, 9, 11 };
             int k = 8;
 
             Stopwatch stopwatchttltk = Stopwatch.StartNew();
@@ -79,14 +94,16 @@ namespace MainProgram
             }
 
             Console.WriteLine($"Execution Time: {stopwatchttltk.ElapsedMilliseconds} ms\n");
-
-
+        }
+        static void TestPersonAndStudent()
+        {
             Person person1 = new Person("Nam", 30);
             person1.Introduce();
             person1.Name = "Tuong";
             person1.Age = 25;
             person1.Introduce();
             person1.Age = 200;
+
             Student student1 = new Student("Thanh", 24, "IT");
             student1.Introduce();
             student1.Study();
