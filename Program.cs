@@ -1,4 +1,4 @@
-﻿using System;
+﻿using static System.Console;
 using System.Diagnostics;
 using Models;
 using Algorithms;
@@ -10,47 +10,69 @@ namespace MainProgram
     {
         static void Main()
         {
-            SolveBasic();
+            //SolveBasic();
             //SolveTwoSum();
             //SolveTwoPointer();
             //SolveTotalMaxLessThanK();
             //TestPersonAndStudent();
-
+            WriteLine("Hello Gau!");
+            Write("Enter a: ");
+            if (int.TryParse(ReadLine(), out int a))
+            {
+                WriteLine($"You entered: {a}");
+            }
+            else
+            {
+                WriteLine("Invalid input. Please enter a valid number.");
+                return;
+            }
+            Write("Enter b: ");
+            if (int.TryParse(ReadLine(), out int b))
+            {
+                WriteLine($"You entered: {b}");
+            }
+            else
+            {
+                WriteLine("Invalid input. Please enter a valid number.");
+                return;
+            }
+            int c = a +b;
+            WriteLine($"Total c= {c}");
         }
 
         static void SolveBasic()
         {
             int[] numstinhtong = { 1, 2, 3, 4, 5 };
-            Console.WriteLine($"Total: {BasicTrain.Total_nums(numstinhtong)}");
+            WriteLine($"Total: {BasicTrain.Total_nums(numstinhtong)}");
 
-            Console.Write("Enter num: ");
-            string? inputNum = Console.ReadLine();
+            Write("Enter num: ");
+            string? inputNum = ReadLine();
             if (int.TryParse(inputNum, out int num_ooe))
             {
                 BasicTrain.odd_or_even(num_ooe);
             }
             else
             {
-                Console.WriteLine("Invalid input. Please enter a valid number.");
+                WriteLine("Invalid input. Please enter a valid number.");
             }
 
-            Console.Write("Enter a string: ");
-            string? input = Console.ReadLine();
+            Write("Enter a string: ");
+            string? input = ReadLine();
             if (!string.IsNullOrEmpty(input))
             {
                 BasicTrain.First_Char(input);
             }
             else
             {
-                Console.WriteLine("Input cannot be null or empty.");
+                WriteLine("Input cannot be null or empty.");
             }
         }
         static void SolveTwoSum()
         {
-            Console.WriteLine("Bài Toán Two sum:\n");
-            Console.WriteLine("Input: [2, 7, 11, 15]\n");
-            Console.WriteLine("target = 9\n");
-            Console.WriteLine("output: [x,x]\n");
+            WriteLine("Bài Toán Two sum:\n");
+            WriteLine("Input: [2, 7, 11, 15]\n");
+            WriteLine("target = 9\n");
+            WriteLine("output: [x,x]\n");
 
             int[] nums = { 2, 7, 11, 15 };
             int target = 9;
@@ -61,23 +83,23 @@ namespace MainProgram
 
             if (result.Length == 2)
             {
-                Console.WriteLine($"Solved:\n");
-                Console.WriteLine($"Result: {result[0]}, {result[1]}\n");
+                WriteLine($"Solved:\n");
+                WriteLine($"Result: {result[0]}, {result[1]}\n");
             }
             else
             {
-                Console.WriteLine("Invalid Solution");
+                WriteLine("Invalid Solution");
             }
 
-            Console.WriteLine($"Execution Time: {stopwatch.ElapsedMilliseconds} ms\n");
+            WriteLine($"Execution Time: {stopwatch.ElapsedMilliseconds} ms\n");
         }
 
         static void SolveTwoPointer()
         {
-            Console.WriteLine("Bài Toán TwoPoint:\n");
-            Console.WriteLine("Input: [1, 2, 3, 4, 6]\n");
-            Console.WriteLine("target = 9\n");
-            Console.WriteLine("output: [x,x]\n");
+            WriteLine("Bài Toán TwoPoint:\n");
+            WriteLine("Input: [1, 2, 3, 4, 6]\n");
+            WriteLine("target = 9\n");
+            WriteLine("output: [x,x]\n");
 
             int[] numstp = { 1, 2, 3, 4, 6 };
             int targettp = 9;
@@ -88,23 +110,23 @@ namespace MainProgram
 
             if (resulttp.Length == 2)
             {
-                Console.WriteLine($"Solved:\n");
-                Console.WriteLine($"Result: {resulttp[0]}, {resulttp[1]}\n");
+                WriteLine($"Solved:\n");
+                WriteLine($"Result: {resulttp[0]}, {resulttp[1]}\n");
             }
             else
             {
-                Console.WriteLine("Invalid Solution");
+                WriteLine("Invalid Solution");
             }
 
-            Console.WriteLine($"Execution Time: {stopwatchtp.ElapsedMilliseconds} ms\n");
+            WriteLine($"Execution Time: {stopwatchtp.ElapsedMilliseconds} ms\n");
         }
 
         static void SolveTotalMaxLessThanK()
         {
-            Console.WriteLine("Bài Toán TotalMaxLessThanK:\n");
-            Console.WriteLine("Input: [1, 5, 7, 9, 11]\n");
-            Console.WriteLine("k = 8\n");
-            Console.WriteLine("output: [x,x]\n");
+            WriteLine("Bài Toán TotalMaxLessThanK:\n");
+            WriteLine("Input: [1, 5, 7, 9, 11]\n");
+            WriteLine("k = 8\n");
+            WriteLine("output: [x,x]\n");
 
             int[] numsttltk = { 1, 5, 7, 9, 11 };
             int k = 8;
@@ -115,15 +137,15 @@ namespace MainProgram
 
             if (resultttltk.Length == 2)
             {
-                Console.WriteLine($"Solved:\n");
-                Console.WriteLine($"Result: {resultttltk[0]}, {resultttltk[1]}\n");
+                WriteLine($"Solved:\n");
+                WriteLine($"Result: {resultttltk[0]}, {resultttltk[1]}\n");
             }
             else
             {
-                Console.WriteLine("Invalid Solution");
+                WriteLine("Invalid Solution");
             }
 
-            Console.WriteLine($"Execution Time: {stopwatchttltk.ElapsedMilliseconds} ms\n");
+            WriteLine($"Execution Time: {stopwatchttltk.ElapsedMilliseconds} ms\n");
         }
         static void TestPersonAndStudent()
         {
